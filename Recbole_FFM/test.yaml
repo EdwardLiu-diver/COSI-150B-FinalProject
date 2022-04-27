@@ -1,0 +1,25 @@
+# dataset config
+field_separator: "\t"
+seq_separator: " "
+USER_ID_FIELD: ~
+ITEM_ID_FIELD: ~
+LABEL_FIELD: label
+
+load_col: 
+    inter: '*'
+
+fill_nan: True
+normalize_all: True
+
+# training and evaluation
+epochs: 100
+train_batch_size: 4096
+eval_batch_size: 4096
+eval_args:
+  mode: labeled
+  group_by: ~
+valid_metric: AUC
+metrics: ['AUC', 'LogLoss']
+
+# model
+embedding_size: 10
