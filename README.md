@@ -13,7 +13,7 @@ https://drive.google.com/drive/folders/1LUAplt4mgB6LhLTGND6x0hrnRC_T9OpN
 
 ### 2. Clone this repository, put your download dataset into /Recbole/dataset folder
 
-### 3.use command
+### 3. Use command
 (base) root % python run_recbole.py --model=FFM --dataset=criteo --config_files=test.yaml
 for FFM model
 
